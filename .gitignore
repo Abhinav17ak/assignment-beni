@@ -1,0 +1,33 @@
+# Naya Git repository initialize karo
+git init
+
+# .gitignore file create karo (ye exact content)
+cat > .gitignore << 'EOF'
+# Python/Django
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+venv/
+env/
+*.log
+db.sqlite3
+
+# Node/React
+node_modules/
+frontend/node_modules/
+**/node_modules/
+build/
+dist/
+frontend/build/
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+EOF
